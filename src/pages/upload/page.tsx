@@ -6,25 +6,13 @@ import { ThemeProvider } from "@/components/theme-provider"
 function Upload() {
 	return (
 		<ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-			<div className="grid w-full min-h-svh">
-				<div className="flex flex-col gap-4 p-6 md:p-10">
-					<div className="flex justify-center gap-2 md:justify-start">
-						<a href="#" className="flex items-center gap-2 font-medium">
-							<div className="bg-primary text-primary-foreground flex size-6 items-center justify-center rounded-md">
-								<Server className="size-4" />
-							</div>
-							Webserv
-						</a>
-					</div>
-				<div className="flex flex-1 items-center justify-center">
-					<div className="max-w-xs">
-						<LoginForm />
-					</div>
+			<div className="flex min-h-svh justify-center items-center">
+				<div className="flow h-[150px] w-[300px] items-center content-center text-center justify-center rounded-md border border-dashed text-sm">
+					<p className="text-base m-0 font-normal">Upload file here</p>
+					<p className="text-sm m-0 opacity-50 font-light">You can only upload 1 file per time</p>
 				</div>
 			</div>
-
-		</div>
-	</ThemeProvider>
+		</ThemeProvider>
 )}
 
 export default Upload
